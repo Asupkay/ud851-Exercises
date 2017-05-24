@@ -37,9 +37,9 @@ public class MainActivity extends AppCompatActivity {
      * @param v Button that was clicked.
      */
     public void onClickOpenWebpageButton(View v) {
-        // TODO (5) Create a String that contains a URL ( make sure it starts with http:// or https:// )
+        // COMPLETED (5) Create a String that contains a URL ( make sure it starts with http:// or https:// )
         String googlewebpage = "http://google.com";
-        // TODO (6) Replace the Toast with a call to openWebPage, passing in the URL String from the previous step
+        // COMPLETED (6) Replace the Toast with a call to openWebPage, passing in the URL String from the previous step
         openWebPage(googlewebpage);
     }
 
@@ -79,15 +79,15 @@ public class MainActivity extends AppCompatActivity {
                 .show();
     }
 
-    // TODO (1) Create a method called openWebPage that accepts a String as a parameter
+    // COMPLETED (1) Create a method called openWebPage that accepts a String as a parameter
     public void openWebPage(String webpage) {
         // Do steps 2 - 4 within openWebPage
 
-        // TODO (2) Use Uri.parse to parse the String into a Uri
+        // COMPLETED (2) Use Uri.parse to parse the String into a Uri
         Uri parsedWeb = Uri.parse(webpage);
-        // TODO (3) Create an Intent with Intent.ACTION_VIEW and the webpage Uri as parameters
+        // COMPLETED (3) Create an Intent with Intent.ACTION_VIEW and the webpage Uri as parameters
         Intent intent = new Intent(Intent.ACTION_VIEW, parsedWeb);
-        // TODO (4) Verify that this Intent can be launched and then call startActivity
+        // COMPLETED (4) Verify that this Intent can be launched and then call startActivity
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }
