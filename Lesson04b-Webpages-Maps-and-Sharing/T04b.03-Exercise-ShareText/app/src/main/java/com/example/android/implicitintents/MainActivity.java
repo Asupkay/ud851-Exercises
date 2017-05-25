@@ -153,13 +153,10 @@ public class MainActivity extends AppCompatActivity {
         // COMPLETED (3) Create a title for the chooser window that will pop up
         String title = "Select email...";
         // COMPLETED (4) Use ShareCompat.IntentBuilder to build the Intent and start the chooser
-        ShareCompat.IntentBuilder share = ShareCompat.IntentBuilder.from(this)
+        ShareCompat.IntentBuilder.from(this)
                 .setChooserTitle(title)
                 .setType(mimeType)
-                .setText(textToShare);
-        Intent shareIntent = share.getIntent();
-        if(shareIntent.resolveActivity(getPackageManager()) != null) {
-            startActivity(share.getIntent());
-        }
+                .setText(textToShare)
+                .startChooser();
     }
 }
