@@ -157,7 +157,9 @@ public class MainActivity extends AppCompatActivity {
                 .setChooserTitle(title)
                 .setType(mimeType)
                 .setText(textToShare);
-
-        startActivity(share.getIntent());
+        Intent shareIntent = share.getIntent();
+        if(shareIntent.resolveActivity(getPackageManager()) != null) {
+            startActivity(share.getIntent());
+        }
     }
 }
