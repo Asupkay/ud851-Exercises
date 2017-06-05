@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity implements
                 } catch (Exception e) {
                     Log.e(TAG, "Failed to asynchronously load data.");
                     e.printStackTrace();
-                    return null
+                    return null;
                 }
             }
 
