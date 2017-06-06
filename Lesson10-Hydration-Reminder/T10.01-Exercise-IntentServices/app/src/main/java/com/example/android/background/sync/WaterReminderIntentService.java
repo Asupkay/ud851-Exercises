@@ -20,7 +20,7 @@ import android.support.annotation.Nullable;
 
 import com.example.android.background.sync.ReminderTasks;
 
-// TODO (9) Create WaterReminderIntentService and extend it from IntentService
+// COMPLETED (9) Create WaterReminderIntentService and extend it from IntentService
 public class WaterReminderIntentService extends IntentService {
 
     public WaterReminderIntentService() {
@@ -33,8 +33,8 @@ public class WaterReminderIntentService extends IntentService {
         ReminderTasks.executeTask( getApplicationContext(), action);
     }
 }
-//  TODO (10) Create a default constructor that calls super with the name of this class
+//  COMPLETED (10) Create a default constructor that calls super with the name of this class
 
-//  TODO (11) Override onHandleIntent
-//      TODO (12) Get the action from the Intent that started this Service
-//      TODO (13) Call ReminderTasks.executeTaskForTag and pass in the action to be performed
+//  COMPLETED (11) Override onHandleIntent
+//      COMPLETED (12) Get the action from the Intent that started this Service
+//      COMPLETED (13) Call ReminderTasks.executeTaskForTag and pass in the action to be performed
