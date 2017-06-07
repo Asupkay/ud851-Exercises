@@ -282,7 +282,7 @@
         android:id="@+id/terminal_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="@string/gate"
+        tools:text="@string/terminal"
         app:layout_constraintTop_toTopOf="@id/body"
         app:layout_constraintBottom_toBottomOf="@id/body"
         app:layout_constraintRight_toRightOf="@id/terminal"
